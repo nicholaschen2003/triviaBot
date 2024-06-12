@@ -178,12 +178,12 @@ async def on_message(message):
     
     elif message.content == f"{SYMBOL}help":
         await message.channel.send(f"""To check available **categories**, use **{SYMBOL}categories**.
-To adjust the **delay between hints**, use **{SYMBOL}hintdelay <seconds>**. Default value is 10.
-To adjust the **delay between questions**, **use {SYMBOL}qdelay <seconds>**. Default value is 5.
+To adjust the **delay between hints**, use **{SYMBOL}hintdelay <seconds>**. Current value is **{TIMEOUT}**.
+To adjust the **delay between questions**, **use {SYMBOL}qdelay <seconds>**. Current value is **{DELAY}**.
 To **check rankings**, use **{SYMBOL}rankings**.
 To **reset rankingas**, use **{SYMBOL}resetrankings**.
-To change the bot's **prefix**, **use {SYMBOL}prefix <new_prefix>** Default value is >.
-To adjust the **correctness threshold**, **use {SYMBOL}ct <number_between_0_and_100>**. Default value is 80.
+To change the bot's **prefix**, **use {SYMBOL}prefix <new_prefix>** Current value is **{SYMBOL}**.
+To adjust the **correctness threshold**, **use {SYMBOL}ct <number_between_0_and_100>**. Current value is **{RATIO}**.
 To **start a game**, use **{SYMBOL}start questions <number_of_questions> category <category_name>**.
 To **skip a question** while a game is running, use **{SYMBOL}skip**,
 To **end a game** that is currently running, use **{SYMBOL}stop**.""")
