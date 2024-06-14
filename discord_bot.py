@@ -294,19 +294,22 @@ async def on_message(message):
         await message.channel.send(f"Prefix is now: {SYMBOL}")
     
     elif message.content == f"{SYMBOL}help":
-        await message.channel.send(f"""To check available **categories**, use **{SYMBOL}categories**.
-To adjust the **delay between hints**, use **{SYMBOL}hintdelay <seconds>**. Current value is **{TIMEOUT}**.
-To adjust the **delay between questions**, use **{SYMBOL}qdelay <seconds>**. Current value is **{DELAY}**.
-To **check rankings**, use **{SYMBOL}rankings**.
-To **reset rankings**, use **{SYMBOL}resetrankings**.
-To adjust the **correctness threshold**, use **{SYMBOL}ct <number_between_0_and_100>**. Current value is **{RATIO}**.
-To adjust the **volume** of songs played during the song quiz, use **{SYMBOL}volume <number_between_0_and_100>**. Current value is **{VOLUME}**.
-To see available **categories** (trivia game), use **{SYMBOL}categories**.
-To see available **difficulties** (song quiz), use **{SYMBOL}difficulties**.
+        await message.channel.send(f"""**__Gameplay commands:__**:
 To **start a trivia game**, use **{SYMBOL}tstart questions <number_of_questions> category <category_name>**.
 To **start a song quiz**, use **{SYMBOL}sstart questions <number_of_questions> difficulty <difficulty_name>**.
 To **skip a question** while a game is running, use **{SYMBOL}skip**,
 To **end a game** that is currently running, use **{SYMBOL}stop**.
+To adjust the **delay between hints**, use **{SYMBOL}hintdelay <seconds>**. Current value is **{TIMEOUT}**.
+To adjust the **delay between questions**, use **{SYMBOL}qdelay <seconds>**. Current value is **{DELAY}**.
+To adjust the **correctness threshold**, use **{SYMBOL}ct <number_between_0_and_100>**. Current value is **{RATIO}**.
+To adjust the **volume** of songs played during the song quiz, use **{SYMBOL}volume <number_between_0_and_100>**. Current value is **{VOLUME}**.
+**__Ranking Commands__**:
+To **check rankings**, use **{SYMBOL}rankings**.
+To **reset rankings**, use **{SYMBOL}resetrankings**.
+**__Info Commands__**:
+To see available **categories** (trivia game), use **{SYMBOL}categories**.
+To see available **difficulties** (song quiz), use **{SYMBOL}difficulties**.
+**__Miscellaneous Commands__**:
 To change the bot's **prefix**, use **{SYMBOL}prefix <new_prefix>** Current value is **{SYMBOL}**.""")
         
 client.run(TOKEN)
