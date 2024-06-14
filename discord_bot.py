@@ -295,7 +295,8 @@ async def on_message(message):
     
     elif message.content == f"{SYMBOL}help":
         await message.channel.send(f"""**__General Info__**:
-Bot made by nc1410 :slight_smile: Currently has two types of games, a trivia game and an anime opening/ending guessing game. The trivia game sends questions from a specific category, and players earn points by guessing the correct answer. The song quiz plays the first 10 seconds of an anime opening/ending, and players earn points by guessing the anime name. Both games also provide hints, and users' points are tracked through all servers.
+Currently has two types of games, a trivia game and an anime opening/ending guessing game. The trivia game sends questions from a specific category, and players earn points by guessing the correct answer. The song quiz plays the first 10 seconds of an anime opening/ending, and players earn points by guessing the anime name. Both games also provide hints, and users' points are tracked through all servers.
+Bot made by nc1410 :slight_smile:
                                    
 **__Gameplay commands:__**:
 - To **start a trivia game**, use **{SYMBOL}tstart questions <number_of_questions> category <category_name>**.
