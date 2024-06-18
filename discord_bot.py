@@ -220,7 +220,7 @@ async def start_game(type, n, c, message):
     await message.channel.send("End of game!")
     if type == "s":
         await vc.disconnect()
-    ranks = "\n".join([f"{i}. {x[0]}: {x[1]}" for i, x in enumerate(RANKINGS.items())])
+    ranks = "\n".join([f"{i}. **{x[0]}**: {x[1]}" for i, x in enumerate(RANKINGS.items())])
     await message.channel.send(f"__**Rankings**__:\n{ranks}")
     FORCE_QUIT = False
     GAME_RUNNING = False
